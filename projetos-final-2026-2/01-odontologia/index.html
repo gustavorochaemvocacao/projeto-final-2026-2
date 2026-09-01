@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  VetVida - Clínica Veterinária
+  Sorriso Pleno Odontologia
   Projeto didático do curso de Web Design.
   Estrutura: header, hero, serviços (cards), sobre, contato (form), footer.
 -->
@@ -9,8 +9,8 @@
   <meta charset="UTF-8" />
   <!-- viewport torna o site responsivo no celular -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VetVida - Clínica Veterinária</title>
-  <meta name="description" content="Consultas, especialidades e contato." />
+  <title>OdontoPrime</title>
+  <meta name="description" content="Clínica odontológica com tratamentos e equipe." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,22 +18,23 @@
   <!-- CABEÇALHO com navegação -->
   <header class="site-header">
     <div class="nav">
-      <div class="logo">🐾 VetVida</div>
+      <div class="logo">🦷 Sorriso Pleno na OdontoPrime</div>
       <button class="menu-toggle" aria-label="Abrir menu">☰</button>
       <ul id="menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><a href="#promocoes">Promoções</a></li>
       </ul>
     </div>
   </header>
 
   <!-- HERO: primeira impressão do site -->
   <section class="hero" id="inicio">
-    <h1>VetVida - Clínica Veterinária</h1>
-    <p>Consultas, especialidades e contato. Atendimento profissional, humano e de qualidade.</p>
-    <a href="#contato" class="btn">Agende sua avaliação</a>
+    <h1>Sorriso Pleno Odontologia</h1>
+    <p>Clínica odontológica com tratamentos de primeira. Quer qualidade? Aqui você encontrará</p>
+    <a href="#contato" class="btn">Não deixe para amanhã, contate-nos agora!</a>
   </section>
 
   <!-- SERVIÇOS em formato de cards -->
@@ -43,7 +44,7 @@
       <p class="subtitle">Conheça o que oferecemos para você</p>
       <div class="grid">
         <article class="card">
-          <div class="icon">🐾</div>
+          <div class="icon">🦷</div>
           <h3>Atendimento personalizado</h3>
           <p>Plano de cuidado individual conforme cada necessidade.</p>
         </article>
@@ -71,7 +72,7 @@
     <div class="container">
       <h2>Sobre nós</h2>
       <p class="subtitle" style="max-width:720px; margin-left:auto; margin-right:auto;">
-        Somos especialistas em pet, dedicados a oferecer a melhor
+        Somos especialistas em saúde, dedicados a oferecer a melhor
         experiência. Trabalhamos com ética, transparência e foco em resultados.
       </p>
     </div>
@@ -89,11 +90,11 @@
         </div>
         <div>
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required placeholder="voce@email.com" />
+          <input type="email" id="email" name="email" required placeholder="seunome@email.com" />
         </div>
         <div>
           <label for="telefone">Telefone / WhatsApp</label>
-          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" />
         </div>
         <div>
           <label for="mensagem">Mensagem</label>
@@ -106,7 +107,7 @@
   </section>
 
   <footer>
-    <p>© <span id="ano"></span> VetVida - Clínica Veterinária — Todos os direitos reservados.</p>
+    <p>© <span id="ano"></span> Sorriso Pleno Odontologia — Todos os direitos reservados.</p>
     <p>Projeto educacional do curso de Web Design.</p>
   </footer>
 

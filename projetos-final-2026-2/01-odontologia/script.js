@@ -43,8 +43,3 @@ if (form) {
     form.reset();
   });
 }
-
-// ========= Seleção de plano =========
-function escolherPlano(nome) {
-  alert(`Você escolheu o plano ${nome}! Em breve nossa equipe entrará em contato.`);
-}

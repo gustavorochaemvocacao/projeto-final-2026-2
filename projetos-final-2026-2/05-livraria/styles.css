@@ -1,5 +1,5 @@
 /* =========================================================
-   DriveZone - Agência de Carros
+   PetCharm - Banho & Tosa
    Folha de estilos principal.
    Conceitos: variáveis CSS, seletores, flexbox, grid,
    responsividade, transições e hover.
@@ -7,9 +7,9 @@
 
 /* Variáveis (Custom Properties) — facilitam manter o tema */
 :root {
-  --primary: #111827;
-  --accent: #ef4444;
-  --bg: #f3f4f6;
+  --primary: #db2777;
+  --accent: #fbcfe8;
+  --bg: #fff5fa;
   --text: #1f2937;
   --muted: #6b7280;
   --card: #ffffff;

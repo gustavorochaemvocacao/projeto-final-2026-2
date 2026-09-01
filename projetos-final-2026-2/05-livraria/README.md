@@ -1,9 +1,9 @@
-# 🌍 Polyglot - Escola de Idiomas
+# 🐶 PetCharm - Banho & Tosa
 
-**Categoria:** Educação
-**Tipo de projeto:** `landing_planos`
+**Categoria:** Pet
+**Tipo de projeto:** `landing_form`
 
-Cursos, níveis e matrícula online.
+Agendamento de banho e tosa.
 
 ## 🎯 Conceitos abordados
 - Estrutura HTML semântica (`header`, `section`, `article`, `footer`)
@@ -16,7 +16,7 @@ Cursos, níveis e matrícula online.
 
 ## 📂 Estrutura de arquivos
 ```
-12-escola-idiomas/
+14-petshop/
 ├── index.html      # estrutura da página
 ├── styles.css      # estilos e responsividade
 ├── script.js       # interatividade

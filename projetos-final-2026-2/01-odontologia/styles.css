@@ -1,5 +1,5 @@
 /* =========================================================
-   Dra. Helena Costa - Psicóloga
+   Sorriso Pleno Odontologia
    Folha de estilos principal.
    Conceitos: variáveis CSS, seletores, flexbox, grid,
    responsividade, transições e hover.
@@ -7,9 +7,9 @@
 
 /* Variáveis (Custom Properties) — facilitam manter o tema */
 :root {
-  --primary: #6b3fa0;
-  --accent: #d6c4ec;
-  --bg: #faf7ff;
+  --primary: #0891b2;
+  --accent: #67e8f9;
+  --bg: #f0fbff;
   --text: #1f2937;
   --muted: #6b7280;
   --card: #ffffff;
@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; } /* rolagem suave para âncoras */
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
