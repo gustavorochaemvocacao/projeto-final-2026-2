@@ -6,81 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escolinha de Futebol & Vôlei Craques</title>
   <meta name="description" content="Apresenta turmas, professores e horários." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+     <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video/fundo.mp4" type="video/mp4">
+    </video>
+
   <header class="site-header">
     <div class="nav">
-      <div class="logo">⚽ Escolinha de Futebol & Vôlei Craques</div>
-      <button class="menu-toggle" aria-label="Menu">☰</button>
-      <ul id="menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#turmas">Turmas</a></li>
-        <li><a href="#horarios">Horários</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+      <div class="logo"><h1>⚽ Escolinha de Futebol & Vôlei Craques</h1></div>
     </div>
   </header>
 
-  <section class="hero" id="inicio">
-    <h1>Escolinha de Futebol & Vôlei Craques</h1>
-    <p>Apresenta turmas, professores e horários.</p>
-    <a href="#turmas" class="btn">Ver turmas</a>
-  </section>
-
-  <section id="turmas">
-    <div class="container">
-      <h2>Turmas Disponíveis</h2>
-      <p class="subtitle">Para todas as idades e níveis</p>
-      <div class="grid">
-        <article class="card"><div class="icon">👶</div><h3>Iniciante</h3><p>Para quem está começando — fundamentos.</p></article>
-        <article class="card"><div class="icon">🧒</div><h3>Intermediário</h3><p>Aprimoramento técnico e tático.</p></article>
-        <article class="card"><div class="icon">🧑</div><h3>Avançado</h3><p>Performance e competição.</p></article>
-        <article class="card"><div class="icon">👵</div><h3>Maior Idade</h3><p>Atividade adaptada e segura.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="horarios" style="background:#fff;">
-    <div class="container">
-      <h2>Grade de Horários</h2>
-      <p class="subtitle">Consulte o melhor dia para você</p>
-      <div style="overflow-x:auto;">
-        <table style="width:100%; border-collapse:collapse; background:#fff; box-shadow:var(--shadow); border-radius:var(--radius); overflow:hidden;">
-          <thead style="background:var(--primary); color:#fff;">
-            <tr><th style="padding:12px;">Horário</th><th>Segunda</th><th>Terça</th><th>Quarta</th><th>Quinta</th><th>Sexta</th></tr>
-          </thead>
-          <tbody>
-            <tr><td style="padding:12px; text-align:center;">08h</td><td>Iniciante - A</td><td>Iniciante - A</td><td>Iniciante</td><td>—</td><td>Iniciante</td></tr>
-            <tr><td style="padding:12px; text-align:center;">10h</td><td>Maior Idade</td><td>Iniciante - B</td><td>Iniciante - B</td><td>Maior Idade</td><td>Maior Idade</td></tr>
-            <tr><td style="padding:12px; text-align:center;">18h</td><td>Intermediário</td><td>Avançado</td><td>Intermediário</td><td>Avançado</td><td>Intermediário</td></tr>
-            <tr><td style="padding:12px; text-align:center;">20h</td><td>Avançado</td><td>Intermediário</td><td>Avançado</td><td>Intermediário</td><td>Avançado</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="container">
-      <h2>Matricule-se</h2>
-      <form class="contact" id="formContato" novalidate>
-        <div><label for="nome">Nome</label><input id="nome" required /></div>
-        <div><label for="email">E-mail</label><input id="email" type="email" required /></div>
-        <div><label for="turma">Turma desejada</label>
-          <select id="turma">
-            <option>Iniciante</option><option>Intermediário</option>
-            <option>Avançado</option><option>Melhor Idade</option>
-          </select>
+  <main id="app">
+    <div class="container-cards">
+      
+      <!-- Card: Quem Somos -->
+      <div class="card">
+        <img src="img/capa.jpg" alt="Quem somos nós">
+        <div class="card-conteudo">
+          <h3>Quem somos nós?</h3>
+          <p>Aprenda mais sobre a nossa estrutura, valores e a paixão pelo esporte.</p>
+          <a href="html/nos.html" class="btn">Conheça nossa história</a>
         </div>
-        <div><label for="mensagem">Observações</label><textarea id="mensagem" rows="3"></textarea></div>
-        <button type="submit" class="btn primary">Matricular</button>
-        <div class="mensagem-feedback" id="feedback"></div>
-      </form>
-    </div>
-  </section>
+      </div>
 
-  <footer><p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques</p></footer>
-  <script src="script.js"></script>
+      <!-- Card: Turmas -->
+      <div class="card">
+        <img src="img/turmas.jpg" alt="Turmas">
+        <div class="card-conteudo">
+          <h3>Turmas</h3>
+          <p>Confira todas as modalidades disponíveis por faixa etária e nível de habilidade.</p>
+          <a href="html/turmas.html" class="btn">Turmas Disponíveis</a>
+        </div>
+      </div>
+
+      <!-- Card: Horários -->
+      <div class="card">
+        <img src="img/feedback.jpg" alt="Horários">
+        <div class="card-conteudo">
+          <h3>Feedbacks</h3>
+          <p>Consulte a grade completa de horários de treinos semanais de futebol e vôlei.</p>
+          <a href="html/feedback.html" class="btn">Avalie nossa escola</a>
+        </div>
+      </div>
+
+      <!-- Card: Contato -->
+      <div class="card">
+        <img src="img/matricula.jpg" alt="Nosso contato">
+        <div class="card-conteudo">
+          <h3>Contato</h3>
+          <p>Faça sua pré-matrícula ou tire suas dúvidas diretamente com nossa equipe.</p>
+          <a href="html/contato.html" class="btn">Matricule-se</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script/script.js"></script>
+
+  <footer>
+    <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques</p>
+  </footer>
+
 </body>
 </html>
