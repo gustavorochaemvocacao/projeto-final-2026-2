@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedbacks</title>
-    <link rel="stylesheet" href="../css/estilo.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedbacks - Escolinha Craques</title>
+  <meta name="description" content="Veja o que alunos e responsáveis dizem sobre os treinos na Escolinha Craques." />
+  <link rel="stylesheet" href="../css/estilo.css" />
 </head>
 <body>
-  
 
-  <a href="../index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">
+        <h1>⚽ Escolinha de Futebol & Vôlei Craques</h1>
+      </div>
+      <nav class="nav-menu" aria-label="Navegação secundária">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="nos.html">Quem Somos</a></li>
+          <li><a href="turmas.html">Turmas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques</p>
-    </footer>
+  <main class="container">
+    <section class="card-conteudo-pagina">
+      <h2>Depoimentos de Nossos Craques</h2>
+      <p>A opinião de nossos alunos e responsáveis é fundamental para o nosso aperfeiçoamento contínuo.</p>
 
-    <script src="../script/script.js"></script>
+      <div class="grid-feedbacks">
+        <article class="feedback-card">
+          <p class="comentario">"O Lucas desenvolveu muito o espírito de equipe e a coordenação motora desde que começou no futebol. Professores excelentes!"</p>
+          <p class="autor"><strong>— Mariana S., mãe do Lucas (9 anos)</strong></p>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </article>
+
+        <article class="feedback-card">
+          <p class="comentario">"Os treinos de vôlei são sensacionais. O ambiente é muito acolhedor e seguro para a prática esportiva."</p>
+          <p class="autor"><strong>— Pedro H. (16 anos)</strong></p>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </article>
+      </div>
+
+      <hr style="margin: 30px 0;">
+
+      <h3>Deixe o seu Feedback</h3>
+      <form class="form-feedback">
+        <div class="campo">
+          <label for="nome-feedback">Seu Nome:</label>
+          <input type="text" id="nome-feedback" required placeholder="Digite seu nome">
+        </div>
+        <div class="campo">
+          <label for="avaliacao">Sua Avaliação:</label>
+          <textarea id="avaliacao" rows="3" required placeholder="Conte-nos sua experiência..."></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Avaliação</button>
+      </form>
+
+      <div style="margin-top: 30px;">
+        <a href="../index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../script/script.js"></script>
 </body>
 </html>

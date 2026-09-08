@@ -1,115 +1,382 @@
 <!DOCTYPE html>
-<!--
-  TecFix - Manutenção de Notebooks e Celulares
-  Projeto didático do curso de Web Design.
-  Estrutura: header, hero, serviços (cards), sobre, contato (form), footer.
--->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <!-- viewport torna o site responsivo no celular -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TecFix - Manutenção de Notebooks e Celulares</title>
-  <meta name="description" content="Solicitação de orçamento online." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>CarloTech - Manutenção de Celulares e Notebooks</title>
+  <meta name="description" content="Solicitação de orçamento online. Atendimento profissional, humano e de alta precisão para seu aparelho." />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- CABEÇALHO com navegação -->
-  <header class="site-header">
+  <header class="site-header">  
     <div class="nav">
-      <div class="logo">💻 TecFix</div>
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="Logo CarloTech" class="logo-img">
+        <span>CarloTech</span>
+      </div>
       <button class="menu-toggle" aria-label="Abrir menu">☰</button>
       <ul id="menu">
         <li><a href="#inicio">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#orcamento-whatsapp">Orçamento</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#depoimentos">Avaliações</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- HERO: primeira impressão do site -->
+  <!-- HERO -->
   <section class="hero" id="inicio">
-    <h1>TecFix - Manutenção de Notebooks e Celulares</h1>
-    <p>Solicitação de orçamento online. Atendimento profissional, humano e de qualidade.</p>
-    <a href="#contato" class="btn">Agende sua avaliação</a>
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="video/loop.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">⚡ Especialistas em Apple & Android</span>
+      <h1>CarloTech - Manutenção de Celulares</h1>
+      <p>Solicitação de orçamento online. Atendimento profissional, humano e de alta precisão para o seu aparelho.</p>
+
+      <!-- Botão de Ação Direta -->
+      <div class="hero-actions">
+        <a href="#orcamento-whatsapp" class="btn btn-hero">
+          📱 Solicitar Orçamento Grátis
+        </a>
+      </div>
+
+      <!-- Prova Social no Hero -->
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>⭐ 4.9/5</span> no Google
+        </div>
+        <div class="trust-item">
+          <span>🛡️ 90 Dias</span> de Garantia
+        </div>
+        <div class="trust-item">
+          <span>🚀 Reparo</span> no Mesmo Dia
+        </div>
+      </div>
+    </div>
+
+    <!-- Divisor em Onda (Wave Divider) -->
+    <div class="custom-shape-divider-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.92,130.83,121.6,201,115.8,241.67,112.44,282.16,88.16,321.39,56.44Z" fill="#fff3e0"></path>
+      </svg>
+    </div>
   </section>
 
-  <!-- SERVIÇOS em formato de cards -->
-  <section id="servicos">
+  <!-- SEÇÃO DE ORÇAMENTO WHATSAPP -->
+  <section id="orcamento-whatsapp" class="orcamento-section">
     <div class="container">
-      <h2>Nossos Serviços</h2>
-      <p class="subtitle">Conheça o que oferecemos para você</p>
-      <div class="grid">
-        <article class="card">
-          <div class="icon">💻</div>
-          <h3>Atendimento personalizado</h3>
-          <p>Plano de cuidado individual conforme cada necessidade.</p>
-        </article>
-        <article class="card">
-          <div class="icon">⭐</div>
-          <h3>Profissionais qualificados</h3>
-          <p>Equipe com formação especializada e experiência.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🏆</div>
-          <h3>Resultados comprovados</h3>
-          <p>Clientes satisfeitos e depoimentos reais.</p>
-        </article>
-        <article class="card">
-          <div class="icon">📅</div>
-          <h3>Horários flexíveis</h3>
-          <p>Atendimento que se encaixa na sua rotina.</p>
-        </article>
+      <h2 class="orcamento-titulo">FAÇA SEU ORÇAMENTO SEM COMPROMISSO!</h2>
+      <p class="orcamento-subtitulo">SOLICITE AGORA MESMO PELO WHATSAPP</p>
+
+      <div class="orcamento-grid">
+        <!-- Card iOS -->
+        <div class="orcamento-card">
+          <div class="orcamento-img-box">
+            <img src="img/samsung.png" alt="Atendimento para iOS - iPhone">
+          </div>
+          <h3>Atendimento<br>para iOS</h3>
+          <a href="ios.html" 
+             target="_blank" 
+             class="btn-ios">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.3c.66-.8 1.11-1.92.99-3.04-1 .04-2.2.67-2.91 1.5-.63.73-1.18 1.88-1.03 2.99 1.12.09 2.29-.65 2.95-1.45z"/>
+            </svg>
+            Saiba mais!
+          </a>
+        </div>
+
+        <!-- Card Android -->
+        <div class="orcamento-card">
+          <div class="orcamento-img-box">
+            <img src="img/bateriaruim.png" alt="Atendimento para Android - Samsung/Motorola">
+          </div>
+          <h3>Atendimento<br>para Android</h3>
+          <a href="android.html" 
+             target="_blank" 
+             class="btn-android">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zM15.53 2.16l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.95 0-1.85.23-2.64.63L7.88.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.3 1.3C6.98 3.29 6 5.02 6 7h12c0-1.98-.98-3.71-2.47-4.84zM10 5H8.5V3.5H10V5zm5.5 0H14V3.5h1.5V5z"/>
+            </svg>
+            Saiba mais!
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" style="background:#fff;">
+  <!-- SEÇÃO NOSSOS DIFERENCIAIS -->
+  <section id="diferenciais" class="diferenciais-section">
     <div class="container">
-      <h2>Sobre nós</h2>
-      <p class="subtitle" style="max-width:720px; margin-left:auto; margin-right:auto;">
-        Somos especialistas em serviços, dedicados a oferecer a melhor
-        experiência. Trabalhamos com ética, transparência e foco em resultados.
+      <span class="diferenciais-kicker">CONHEÇA MELHOR OS</span>
+      <h2 class="diferenciais-titulo">NOSSOS DIFERENCIAIS</h2>
+      <p class="diferenciais-subtitulo">
+        Temos experiência e qualidade para atender todos os equipamentos, com um laboratório altamente tecnológico.
       </p>
+
+      <div class="diferenciais-grid">
+        <!-- Card 1 -->
+        <div class="diferencial-card">
+          <div class="diferencial-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="8"></circle>
+              <polyline points="12 8 12 12 15 14"></polyline>
+              <path d="M9 2h6"></path>
+            </svg>
+          </div>
+          <h3>Seu celular pronto no mesmo dia</h3>
+          <p>Serviço rápido e eficiente</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="diferencial-card">
+          <div class="diferencial-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+              <text x="12" y="18" font-size="7" font-weight="bold" text-anchor="middle" fill="currentColor" stroke="none">10</text>
+            </svg>
+          </div>
+          <h3>Atendimento com agendamento</h3>
+          <p>e prioridade na hora marcada</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="diferencial-card">
+          <div class="diferencial-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <h3>Estacionamento rotativo</h3>
+          <p>e localização estratégica</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="diferencial-card">
+          <div class="diferencial-icon">
+            <span class="g-logo">G</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <h3>Loja mais bem avaliada</h3>
+          <p>(+140 avaliações 5 estrelas)</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="diferencial-card">
+          <div class="diferencial-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <h3>Peças de qualidade premium</h3>
+          <p>para evitar problemas futuros</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="diferencial-card">
+          <div class="diferencial-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5.5" cy="17.5" r="2.5"></circle>
+              <circle cx="18.5" cy="17.5" r="2.5"></circle>
+              <path d="M15 6h2.5l2.5 5v6.5h-1.5"></path>
+              <path d="M3 17.5V11l4-5h8v11.5"></path>
+            </svg>
+          </div>
+          <h3>Delivery para maior comodidade</h3>
+          <p>(Consulte taxas para sua região)</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CONTATO com formulário -->
-  <section id="contato">
+  <!-- SEÇÃO DEPOIMENTOS -->
+  <section id="depoimentos" class="depoimentos-section">
     <div class="container">
-      <h2>Fale conosco</h2>
-      <p class="subtitle">Preencha e retornaremos em breve</p>
-      <form class="contact" id="formContato" novalidate>
-        <div>
-          <label for="nome">Nome completo</label>
-          <input type="text" id="nome" name="nome" required placeholder="Seu nome" />
+      <span class="diferenciais-kicker">O QUE DIZEM NOSSOS CLIENTES</span>
+      <h2 class="diferenciais-titulo">AVALIAÇÕES NO GOOGLE</h2>
+      
+      <div class="depoimentos-grid">
+        <div class="depoimento-card">
+          <div class="depoimento-stars">★★★★★</div>
+          <p>"Troquei a tela do meu iPhone e ficou perfeita! Atendimento rápido e o aparelho ficou pronto no mesmo dia."</p>
+          <div class="depoimento-autor">
+            <strong>Lucas Mendes</strong>
+            <span>Cliente Google</span>
+          </div>
         </div>
-        <div>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required placeholder="voce@email.com" />
+
+        <div class="depoimento-card">
+          <div class="depoimento-stars">★★★★★</div>
+          <p>"Ótimo atendimento, transparente com os valores e peças de excelente qualidade. Recomendo demais!"</p>
+          <div class="depoimento-autor">
+            <strong>Mariana Costa</strong>
+            <span>Cliente Google</span>
+          </div>
         </div>
-        <div>
-          <label for="telefone">Telefone / WhatsApp</label>
-          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+
+        <div class="depoimento-card">
+          <div class="depoimento-stars">★★★★★</div>
+          <p>"Serviço de delivery muito prático. Buscaram meu celular no trabalho e entregaram reparado no final do dia."</p>
+          <div class="depoimento-autor">
+            <strong>Rafael Alves</strong>
+            <span>Cliente Google</span>
+          </div>
         </div>
-        <div>
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
-        </div>
-        <button type="submit" class="btn primary">Enviar mensagem</button>
-        <div class="mensagem-feedback" id="feedback"></div>
-      </form>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© <span id="ano"></span> TecFix - Manutenção de Notebooks e Celulares — Todos os direitos reservados.</p>
-    <p>Projeto educacional do curso de Web Design.</p>
-  </footer>
+  <!-- SEÇÃO PERGUNTAS FREQUENTES (FAQ) -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <span class="diferenciais-kicker">TIRA-DÚVIDAS</span>
+      <h2 class="diferenciais-titulo">PERGUNTAS FREQUENTES</h2>
 
-  <script src="script.js"></script>
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary>Quanto tempo demora o conserto do celular?</summary>
+          <p>A maioria dos serviços simples (como troca de tela ou bateria) fica pronta no mesmo dia, muitas vezes em poucas horas após o agendamento.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Os serviços possuem garantia?</summary>
+          <p>Sim! Todos os nossos reparos e peças trocadas contam com 90 dias de garantia para sua total tranquilidade.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Como funciona o serviço de Delivery?</summary>
+          <p>Nós buscamos o aparelho no seu endereço e o entregamos de volta assim que o reparo for concluído. A taxa do frete é calculada de acordo com sua localização.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- COLUNA 1: SOBRE -->
+    <div class="footer-col col-sobre">
+      <h3 class="footer-title">Sobre</h3>
+      <p>
+        A CarloTech é uma empresa particular e independente, NÃO somos Autorizados e nem representamos nenhuma marca ou fabricante. Somos uma assistência Multi Marca e não atendemos garantia do fabricante nem garantia estendida.
+      </p>
+
+    </div>
+
+    <!-- COLUNA 2: MENU -->
+    <div class="footer-col col-menu">
+      <h3 class="footer-title">Menu</h3>
+      <ul class="footer-nav">
+        <li><a href="#sobre">Sobre a CarloTech</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#orcamento">Solicitar Orçamento</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA 3: CONTATO E REDES SOCIAIS -->
+    <div class="footer-col col-contato">
+      <h3 class="footer-title">Contato</h3>
+      <address class="footer-address">
+        <p>Av. Paulista, 1500 — Cj. 42 (Bela Vista)</p>
+        <p>São Paulo – SP</p>
+        <p>CEP.: 01310-200</p>
+      </address>
+      
+      <p class="footer-email">
+        <a href="mailto:contato@carlotech.com.br">contato@carlotech.com.br</a>
+      </p>
+      
+      <p class="footer-phone">
+        <a href="https://wa.me/5511980170724" target="_blank" rel="noopener noreferrer">(11) 98017-0724</a>
+      </p>
+
+      <!-- ÍCONES DAS REDES SOCIAIS -->
+      <div class="footer-socials">
+        <!-- Facebook -->
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5511980170724" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RODAPÉ INFERIOR (COPYRIGHT) -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-container">
+      <p>© <span id="ano">2026</span> CarloTech. Todos os direitos reservados.</p>
+      <p>Desenvolvido por: <a href="#" target="_blank" rel="noopener noreferrer">Fellipe & Gustavo</a></p>
+    </div>
+  </div>
+</footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5511980170724" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- IA AUXILIAR (WIDGET FLUTUANTE DO CHATBOT) -->
+  <div class="ia-chat-widget">
+    <button id="iaChatToggle" class="ia-chat-toggle" aria-label="Abrir assistente IA">
+      🤖 <span>Dúvidas?</span>
+    </button>
+    
+    <div id="iaChatBox" class="ia-chat-box">
+      <div class="ia-chat-header">
+        <div class="ia-chat-title">
+          <span>🤖</span>
+          <div>
+            <strong>CarloBot IA</strong>
+            <small>Assistente Virtual</small>
+          </div>
+        </div>
+        <button id="iaChatClose" class="ia-chat-close">&times;</button>
+      </div>
+
+      <div id="iaChatMessages" class="ia-chat-messages">
+        <div class="ia-message bot">
+          Olá! Sou a IA auxiliar da CarloTech. Como posso te ajudar hoje? Digite sua dúvida ou selecione um tema abaixo:
+        </div>
+      </div>
+
+      <div class="ia-chat-suggestions">
+      <button data-query="orçamento">💰 Orçamento</button>
+      <button data-query="prazo">⏱️ Tempo de Reparo</button>
+      <button data-query="garantia">🛡️ Garantia</button>
+      <button data-query="endereço">📍 Localização</button>
+      </div>
+
+      <div class="ia-chat-input-area">
+        <input type="text" id="iaChatInput" placeholder="Digite sua mensagem..." />
+        <button id="iaChatSend" class="btn-ia-send">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script/script.js"></script>
 </body>
 </html>

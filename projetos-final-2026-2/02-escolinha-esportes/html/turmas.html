@@ -1,116 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turmas e Horários - Escolinha Craques</title>
-    <!-- O ../ faz o HTML sair da pasta html e encontrar a pasta css -->
-    <link rel="stylesheet" href="../css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turmas e Horários - Escolinha Craques</title>
+  <meta name="description" content="Confira a grade completa de horários de treinos semanais de futebol e vôlei." />
+  <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 
-    <!-- Vídeo de fundo com overlay -->
-    <video class="bg-video" autoplay muted loop playsinline>
-        <source src="../video/fundo.mp4" type="video/mp4">
-    </video>
-    <div class="bg-overlay"></div>
+  <video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="../video/fundo.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
 
-    <main class="container">
-      <div class="agenda-wrapper">
-        <h2 style="color: var(--accent); font-size: 2.2rem; margin-bottom: 5px;">Turmas e Horários</h2>
-        <p class="subtitle" style="color: #ffffff; margin-bottom: 25px;">Confira a grade completa e agende uma aula experimental!</p>
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">
+        <h1>⚽ Escolinha de Futebol & Vôlei Craques</h1>
+      </div>
+      <nav class="nav-menu" aria-label="Navegação secundária">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="nos.html">Quem Somos</a></li>
+          <li><a href="feedback.html">Feedbacks</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="tabela-container">
-          <table class="tabela-horarios">
-            <thead>
-              <tr>
-                <th>Turma / Faixa Etária</th>
-                <th>Turno</th>
-                <th>Horário</th>
-                <th>Dias da Semana</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Iniciante -->
-              <tr>
-                <td rowspan="2" class="turma-nome">
-                  <strong>⚽🏐 Turma Iniciante</strong><br>
-                  <small>(6 a 10 anos)</small>
-                </td>
-                <td>Futebol</td>
-                <td>08h00 às 11h00</td>
-                <td>Terça e Quinta </td>
-              </tr>
-              <tr>
-                <td>Vôlei</td>
-                <td>14h00 às 17h00</td>
-                <td>Terça e Quinta</td>
-              </tr>
+  <main class="container">
+    <div class="agenda-wrapper">
+      <h2 style="color: var(--accent, #f39c12); font-size: 2.2rem; margin-bottom: 5px;">Turmas e Horários</h2>
+      <p class="subtitle" style="color: #ffffff; margin-bottom: 25px;">Confira a grade completa e agende uma aula experimental!</p>
 
-              <!-- Intermediários -->
-              <tr>
-                <td rowspan="2" class="turma-nome">
-                  <strong>⚽🏐 Turma Intermediários</strong><br>
-                  <small>(11 a 13 anos)</small>
-                </td>
-                <td>Futebol</td>
-                <td>10h00 às 11h30</td>
-                <td>Segunda e Qurta</td>
-              </tr>
-              <tr>
-                <td>Vôlei</td>
-                <td>17h00 às 19h00</td>
-                <td>Segunda e Qurta</td>
-              </tr>
+      <div class="tabela-container">
+        <table class="tabela-horarios">
+          <thead>
+            <tr>
+              <th>Turma / Faixa Etária</th>
+              <th>Modalidade</th>
+              <th>Horário</th>
+              <th>Dias da Semana</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Iniciante -->
+            <tr>
+              <td rowspan="2" class="turma-nome">
+                <strong>⚽🏐 Turma Iniciante</strong><br>
+                <small>(6 a 10 anos)</small>
+              </td>
+              <td>Futebol</td>
+              <td>08h00 às 11h00</td>
+              <td>Terça e Quinta</td>
+            </tr>
+            <tr>
+              <td>Vôlei</td>
+              <td>14h00 às 17h00</td>
+              <td>Terça e Quinta</td>
+            </tr>
 
-              <!-- Avançado -->
-              <tr>
-                <td rowspan="2" class="turma-nome">
-                  <strong>⚽🏐 Turma Avançado</strong><br>
-                  <small>(14 a 17 anos)</small>
-                </td>
-                <td>Futebol</td>
-                <td>19h00 às 21h00</td>
-                <td>Quarta e Sexta</td>
-              </tr>
-              <tr>
-                <td>Vôlei</td>
-                <td>00h00 às 03h00</td>
-                <td>Quarta e Sexta</td>
-              </tr>
+            <!-- Intermediários -->
+            <tr>
+              <td rowspan="2" class="turma-nome">
+                <strong>⚽🏐 Turma Intermediária</strong><br>
+                <small>(11 a 13 anos)</small>
+              </td>
+              <td>Futebol</td>
+              <td>10h00 às 11h30</td>
+              <td>Segunda e Quarta</td>
+            </tr>
+            <tr>
+              <td>Vôlei</td>
+              <td>17h00 às 19h00</td>
+              <td>Segunda e Quarta</td>
+            </tr>
 
-              <!-- Maior de Idade -->
-              <tr>
-                <td rowspan="2" class="turma-nome">
-                  <strong>⚽🏐 Turma Maior de Idade</strong><br>
-                  <small>(18 a 20 anos)</small>
-                </td>
-                <td>Futebol</td>
-                <td>06h00 às 08h30</td>
-                <td>Quarta e Sexta</td>
-              </tr>
-              <tr>
-                <td>Vôlei</td>
-                <td>15h30 às 17h30</td>
-                <td>Quarta e Sexta</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            <!-- Avançado -->
+            <tr>
+              <td rowspan="2" class="turma-nome">
+                <strong>⚽🏐 Turma Avançada</strong><br>
+                <small>(14 a 17 anos)</small>
+              </td>
+              <td>Futebol</td>
+              <td>19h00 às 21h00</td>
+              <td>Quarta e Sexta</td>
+            </tr>
+            <tr>
+              <td>Vôlei</td>
+              <td>17h00 às 19h00</td>
+              <td>Quarta e Sexta</td>
+            </tr>
 
-        <div class="agenda-contato">
-          <p>📱 WhatsApp: <strong>(11) 96767-7676</strong> | 📸 Instagram: <strong>@escolinhacraquetotalofc</strong></p>
-          <div>
-            <a href="../index.html" class="btn-voltar">Voltar para a Página Inicial</a>
-          </div>
+            <!-- Maior de Idade -->
+            <tr>
+              <td rowspan="2" class="turma-nome">
+                <strong>⚽🏐 Turma Maior de Idade</strong><br>
+                <small>(18 a 20 anos)</small>
+              </td>
+              <td>Futebol</td>
+              <td>06h00 às 08h30</td>
+              <td>Quarta e Sexta</td>
+            </tr>
+            <tr>
+              <td>Vôlei</td>
+              <td>15h30 às 17h30</td>
+              <td>Quarta e Sexta</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="agenda-contato">
+        <p>📱 WhatsApp: <strong>(11) 96767-7676</strong> | 📸 Instagram: <strong>@escolinhacraquetotalofc</strong></p>
+        <div style="margin-top: 15px;">
+          <a href="../index.html" class="btn-voltar">Voltar para a Página Inicial</a>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <script src="../script/script.js"></script>
+  <footer class="site-footer">
+    <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques. Todos os direitos reservados.</p>
+  </footer>
 
-    <footer>
-      <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques</p>
-    </footer>
+  <script src="../script/script.js"></script>
 </body>
 </html>

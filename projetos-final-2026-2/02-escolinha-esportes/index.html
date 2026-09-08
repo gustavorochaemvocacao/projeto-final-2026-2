@@ -1,75 +1,94 @@
 <!DOCTYPE html>
-<!-- Escolinha de Futebol & Vôlei Craques — Grade de horários/turmas -->
+<!-- Escolinha de Futebol & Vôlei Craques — Página Inicial -->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escolinha de Futebol & Vôlei Craques</title>
-  <meta name="description" content="Apresenta turmas, professores e horários." />
+  <meta name="description" content="Aprenda futebol e vôlei na Escolinha Craques! Confiras nossas turmas, horários, estrutura e faça sua matrícula." />
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-     <video class="bg-video" autoplay muted loop playsinline>
-        <source src="video/fundo.mp4" type="video/mp4">
-    </video>
 
+  <!-- Vídeo de fundo com atributo de acessibilidade e controle via script -->
+  <video class="bg-video" id="bgVideo" autoplay muted loop playsinline aria-hidden="true">
+    <source src="video/fundo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+
+  <!-- Cabeçalho principal com navegação -->
   <header class="site-header">
-    <div class="nav">
-      <div class="logo"><h1>⚽ Escolinha de Futebol & Vôlei Craques</h1></div>
+    <div class="nav-container">
+      <div class="logo">
+        <h1>⚽ Escolinha de Futebol & Vôlei Craques</h1>
+      </div>
+      
+      <!-- Menu de Navegação para Acessibilidade e SEO -->
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="html/nos.html">Quem Somos</a></li>
+          <li><a href="html/turmas.html">Turmas</a></li>
+          <li><a href="html/feedback.html">Feedbacks</a></li>
+          <li><a href="html/contato.html" class="nav-btn-highlight">Matricule-se</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+  <!-- Conteúdo Principal -->
   <main id="app">
     <div class="container-cards">
       
       <!-- Card: Quem Somos -->
-      <div class="card">
-        <img src="img/capa.jpg" alt="Quem somos nós">
+      <article class="card">
+        <img src="img/capa.jpg" alt="Estrutura e alunos da Escolinha de Futebol e Vôlei Craques">
         <div class="card-conteudo">
           <h3>Quem somos nós?</h3>
-          <p>Aprenda mais sobre a nossa estrutura, valores e a paixão pelo esporte.</p>
+          <p>Aprenda mais sobre a nossa estrutura, valores e a nossa paixão pelo esporte.</p>
           <a href="html/nos.html" class="btn">Conheça nossa história</a>
         </div>
-      </div>
+      </article>
 
       <!-- Card: Turmas -->
-      <div class="card">
-        <img src="img/turmas.jpg" alt="Turmas">
+      <article class="card">
+        <img src="img/turmas.jpg" alt="Alunos treinando nas turmas de futebol e vôlei">
         <div class="card-conteudo">
           <h3>Turmas</h3>
           <p>Confira todas as modalidades disponíveis por faixa etária e nível de habilidade.</p>
           <a href="html/turmas.html" class="btn">Turmas Disponíveis</a>
         </div>
-      </div>
+      </article>
 
-      <!-- Card: Horários -->
-      <div class="card">
-        <img src="img/feedback.jpg" alt="Horários">
+      <!-- Card: Feedbacks (Texto corrigido) -->
+      <article class="card">
+        <img src="img/feedback.jpg" alt="Depoimentos e avaliações dos nossos alunos e pais">
         <div class="card-conteudo">
           <h3>Feedbacks</h3>
-          <p>Consulte a grade completa de horários de treinos semanais de futebol e vôlei.</p>
+          <p>Veja o que nossos alunos e pais dizem sobre os treinos e deixe também a sua avaliação.</p>
           <a href="html/feedback.html" class="btn">Avalie nossa escola</a>
         </div>
-      </div>
+      </article>
 
-      <!-- Card: Contato -->
-      <div class="card">
-        <img src="img/matricula.jpg" alt="Nosso contato">
+      <!-- Card: Contato / Matrícula -->
+      <article class="card">
+        <img src="img/matricula.jpg" alt="Faça sua matrícula na Escolinha Craques">
         <div class="card-conteudo">
           <h3>Contato</h3>
-          <p>Faça sua pré-matrícula ou tire suas dúvidas diretamente com nossa equipe.</p>
+          <p>Faça sua pré-matrícula ou tire suas dúvidas diretamente com a nossa equipe.</p>
           <a href="html/contato.html" class="btn">Matricule-se</a>
         </div>
-      </div>
+      </article>
 
     </div>
   </main>
 
-  <script src="script/script.js"></script>
-
-  <footer>
-    <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques</p>
+  <!-- Rodapé Completo -->
+  <footer class="site-footer">
+    <div class="footer-conteudo">
+      <p>© <span id="ano"></span> Escolinha de Futebol & Vôlei Craques. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
+  <script src="script/script.js"></script>
 </body>
 </html>
