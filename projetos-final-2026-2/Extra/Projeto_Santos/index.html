@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos Católicos</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video/santos.mp4" type="video/mp4">
+    </video>
+
+    <audio id="bg-audio" src="audio/gregoriano.mp3" loop></audio>
+    <div class="bg-overlay"></div>
+
+    <header>
+        <h1>Santos Católicos</h1>
+        <p>Veja um pouco sobre alguns santos católicos</p>
+
+        <div class="controles">
+            <input type="text" id="search-input" placeholder="Buscar santo...">
+            <button id="toggle-audio-btn" class="btn-controle">🔊 Ouvir Música</button>
+        </div>
+    </header>
+
+    <!-- Área dinâmica onde o conteúdo das páginas dos santos será carregado -->
+    <main id="app">
+        <div class="container-cards">
+            <div class="card">
+                <img src="img/joao_paulo.jpg" alt="São João Paulo II">
+                <div class="card-conteudo">
+                    <h3>São João Paulo II</h3>
+                    <p>O papa que venceu o comunismo. Sobrevivente da Segunda Guerra Mundial, conseguiu um feito considerado impossível de vencer o regime socialista incentivando o movimento Solidarność.</p>
+                    <a href="html/SJPII.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/santo_agostinho.jpg" alt="Santo Agostinho">
+                <div class="card-conteudo">
+                    <h3>Santo Agostinho de Hipona</h3>
+                    <p>Um grande patriarca da Igreja Católica. Conhecido por defender a doutina católica das heresias como o maniqueísmo e pelagianismo.</p>
+                    <a href="html/SAH.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/santo_tomas.jpg" alt="Santo Tomás de Aquino">
+                <div class="card-conteudo">
+                    <h3>Santo Tomás de Aquino</h3>
+                    <p>Autor da Suma Teológica, conseguiu explicar a fé sobrenatural baseada na razão. Utilizando a filosofia ateniense como base e a doutrina católica da patrística.</p>
+                    <a href="html/STA.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Vianney.png" alt="São João Maria Vianney">
+                <div class="card-conteudo">
+                    <h3>São João Maria Vianney</h3>
+                    <p>O famoso Cura d'Ars. Conhecido como padroeiro dos padres e por sua entrega total ao ministério sacerdotal.</p>
+                    <a href="html/SJMV.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/bento.jpg" alt="São Bento">
+                <div class="card-conteudo">
+                    <h3>São Bento</h3>
+                    <p>O criador da medalha de São Bento e dos beneditinos. Com essa medalha combateu frente a frente Satanás e sua regra beneditina moldou a civilização ocidental depois da queda do Império Romano.</p>
+                    <a href="html/SBN.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/terezinha.jpg" alt="Santa Teresinha do Menino Jesus">
+                <div class="card-conteudo">
+                    <h3>Santa Teresinha do Menino Jesus</h3>
+                    <p>A padroeira das missões. Carmelita do mosteiro de Lisieux dedicou sua vida ao Menino Jesus e acreditava que o caminho era ser como criança diante de Deus.</p>
+                    <a href="html/STMJ.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/carlo.jpg" alt="São Carlo Acutis">
+                <div class="card-conteudo">
+                    <h3>São Carlo Acutis</h3>
+                    <p>O "Santo da Internet". Criou sites para propagar os milagres eucarísticos e influencia jovens a usarem a internet como meio de evangelização.</p>
+                    <a href="html/SCA.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/maximiliano.jpg" alt="São Maximiliano Kolbe">
+                <div class="card-conteudo">
+                    <h3>São Maximiliano Kolbe</h3>
+                    <p>O santo que morreu no lugar de 10 fugitivos do campo de concentração. Ademais, conhecido por sua confiança total à Virgem Maria.</p>
+                    <a href="html/SMK.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/pedro.jpg" alt="São Pedro">
+                <div class="card-conteudo">
+                    <h3>São Pedro</h3>
+                    <p>O primeiro papa da Igreja Católica. O príncipe dos apóstolos, aquele que proclamou a divindade de Nosso Senhor Jesus Cristo na cidade de Roma e quem iniciou a sucessão apostólica.</p>
+                    <a href="html/SPE.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/justino.jpg" alt="São Justino">
+                <div class="card-conteudo">
+                    <h3>São Justino</h3>
+                    <p>Um dos primeiros apologetas católicos. Estava procurando a razão da vida em todos os lugares do mundo, todavia somente encontrou paz e saciedade na Igreja Católica.</p>
+                    <a href="html/SJ.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
