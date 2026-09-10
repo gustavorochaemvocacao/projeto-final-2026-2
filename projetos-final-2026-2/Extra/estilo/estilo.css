@@ -28,6 +28,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative; /* Adicionado para respeitar o z-index */
+    z-index: 1;         /* Garante que fica acima do vídeo e do overlay */
 }
 
 /* ==========================================
@@ -221,14 +223,13 @@ header p {
 }
 
 .card-hidden {
-    display: none !important;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.4s ease, transform 0.4s ease;
+    /* Removido o display: none !important daqui */
 }
 
 .card-visible {
-    display: block !important;
     opacity: 1;
     transform: translateY(0);
 }
